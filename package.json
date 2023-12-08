@@ -1,0 +1,34 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ob": "nuxt dev --dotenv .env.ob",
+    "kk": "nuxt dev --dotenv .env.kk",
+    "build:ob": "nuxt build --dotenv .env.ob",
+    "build:kk": "nuxt build --dotenv .env.kk",
+    "pro:ob": "nuxt generate --dotenv .env.ob",
+    "pro:kk": "nuxt generate --dotenv .env.kk",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@element-plus/nuxt": "^1.0.7",
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/device": "^3.1.1",
+    "@nuxtjs/i18n": "^8.0.0-rc.8",
+    "@unocss/nuxt": "^0.58.0",
+    "@vueuse/core": "^10.7.0",
+    "@vueuse/nuxt": "^10.7.0",
+    "nuxt": "^3.8.2",
+    "vue": "^3.3.10",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@formkit/auto-animate": "^0.8.1",
+    "@nuxt/image": "^1.1.0",
+    "@pinia/nuxt": "^0.5.1",
+    "@unocss/reset": "^0.58.0",
+    "pinia": "^2.1.7"
+  }
+}
