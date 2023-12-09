@@ -11,7 +11,7 @@ export const appStore = defineStore({
     getAppId: state => state.appId
   },
   actions: {
-    setAppId(id: any) {
+    setAppId(id: string) {
       this.appId = id
     }
   }

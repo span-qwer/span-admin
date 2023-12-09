@@ -3,12 +3,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "ob": "nuxt dev --dotenv .env.ob",
-    "kk": "nuxt dev --dotenv .env.kk",
-    "build:ob": "nuxt build --dotenv .env.ob",
-    "build:kk": "nuxt build --dotenv .env.kk",
-    "pro:ob": "nuxt generate --dotenv .env.ob",
-    "pro:kk": "nuxt generate --dotenv .env.kk",
+    "th1": "nuxt dev --dotenv .env.th1",
+    "th2": "nuxt dev --dotenv .env.th2",
+    "build:th1": "nuxt build --dotenv .env.th1",
+    "build:th2": "nuxt build --dotenv .env.th2",
+    "pro:th1": "nuxt generate --dotenv .env.th1",
+    "pro:th2": "nuxt generate --dotenv .env.th2",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
@@ -25,10 +25,10 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
     "@formkit/auto-animate": "^0.8.1",
     "@nuxt/image": "^1.1.0",
     "@pinia/nuxt": "^0.5.1",
-    "@unocss/reset": "^0.58.0",
     "pinia": "^2.1.7"
   }
 }

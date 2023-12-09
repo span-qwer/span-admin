@@ -1,7 +1,7 @@
 <template>
-  <div class="min-h-screen min-w-screen bg-bg1">
+  <div class="min-h-screen min-w-screen bg-base-bg1 text-base-tx1 text-base-sz2">
     <LazyPcHeader />
-    <main class="p-[30px]">
+    <main class="px-[30px] pt-[--header-height]">
       <slot />
     </main>
   </div>

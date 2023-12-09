@@ -1,10 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  alias: {
-    // '@': './'
-  },
+  alias: {},
   devtools: { enabled: true },
-  ssr: false,
+  // ssr: false,
   modules: [
     '@nuxt/image',
     '@pinia/nuxt',
@@ -18,5 +16,5 @@ export default defineNuxtConfig({
   i18n: {
     vueI18n: './locale/index.ts'
   },
-  css: ['@/assets/style.css', '@unocss/reset/normalize.css']
+  css: ['@/assets/style.css', 'element-plus/theme-chalk/dark/css-vars.css']
 })
