@@ -11,8 +11,10 @@ export const appStore = defineStore({
     getAppId: state => state.appId
   },
   actions: {
-    setAppId(id: string) {
-      this.appId = id
+    async setAppId() {
+      const { appId }: any = await $fetch('/api/appId')
+      this.appId = appId
+      return { appId }
     }
   }
 })

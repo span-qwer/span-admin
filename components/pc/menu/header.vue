@@ -1,7 +1,11 @@
 <template>
-  <div class="flex-1 flex-x gap-[20px] h-[35px] border-b-tx2 b-b-solid b-b dark:border-b-tx4">
-    <div>pages</div>
-    <div>admin</div>
+  <div class="flex-1 flex-x h-[35px]">
+    <div
+      class="h-full px-[15px] b-b-solid b-b-[2px] cursor-pointer border-b-tx2 dark:border-b-tx4 flex-x hover:border-b-tx3"
+    >
+      pages
+    </div>
+    <div class="header-menu-item">admin</div>
   </div>
 </template>
 

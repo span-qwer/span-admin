@@ -35,7 +35,7 @@ const THEME: any = process.env.APP_THEME
 export default defineConfig({
   shortcuts: {
     animation300: 'transition-all duration-300',
-    'text-base-tx1': 'text-tx1 dark:text-[#ddd] animation300',
+    'text-base-tx1': 'text-tx1 dark:text-[#eee] animation300',
     'text-base-tx2': 'text-tx2 dark:text-[#bbb] animation300',
     'text-base-tx3': 'text-tx3 dark:text-[#999] animation300',
     'text-base-tx4': 'text-tx4 dark:text-[#666] animation300',
@@ -50,7 +50,10 @@ export default defineConfig({
 
     wrap: 'w-[1080px] mx-[auto]',
     'flex-x': 'flex items-center',
-    'flex-y': 'flex justify-center'
+    'flex-y': 'flex justify-center',
+
+    'header-menu-item':
+      'h-full px-[15px] b-b-solid b-b-[2px] border-b-tx2 dark:border-b-tx4 flex-x'
   },
   theme: {
     colors: {
