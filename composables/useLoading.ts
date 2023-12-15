@@ -1,6 +1,6 @@
 import { type Ref, ref } from 'vue'
 
-export default function useAsyncFunction(fun: Function): any {
+export default function (fun: Function): any {
   const fLoadingCounter: Ref<number> = ref(0)
   const fLoading: Ref<boolean> = ref(false)
 

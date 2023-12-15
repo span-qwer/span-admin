@@ -5,7 +5,7 @@ export interface FormType {
   reset: () => void
 }
 
-export default function useForm(obj: object): FormType {
+export default function (obj: object): FormType {
   const defaultForm = () => ({ ...obj })
 
   const form: object = reactive(defaultForm())

@@ -45,9 +45,7 @@ interface F {
   [key: string]: (...args: any[]) => Promise<any>
 }
 
-export default function createFunsHandler(
-  funs: Array<Function> | null | undefined
-) {
+export default function (funs: Array<Function> | null | undefined) {
   if (!funs || !funs.length) return
 
   const fLoadingCounter: FLoadingCounter = reactive({})

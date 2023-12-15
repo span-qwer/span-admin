@@ -8,13 +8,7 @@
 </template>
 
 <script setup lang="ts">
-const { locale } = useI18n()
-watch(
-  () => locale.value,
-  value => {
-    localStorage.setItem('locale', value)
-  }
-)
+const { locale } = useLocales()
 </script>
 
 <style scoped></style>
