@@ -53,7 +53,7 @@ export default defineConfig({
     'flex-y': 'flex justify-center',
 
     'header-menu-item':
-      'h-full px-[15px] b-b-solid b-b-[2px] border-b-tx2 dark:border-b-tx4 flex-x'
+      'h-full px-[15px] b-b-solid b-b-[2px] cursor-pointer border-b-tx2 dark:border-b-tx4 flex-x hover:border-b-tx3'
   },
   theme: {
     colors: {
