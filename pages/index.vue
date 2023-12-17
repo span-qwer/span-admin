@@ -14,6 +14,12 @@
         <el-button @click="getData" type="info" :loading="getData.Loading">
           {{ $t('ajax') }}
         </el-button>
+        <el-button @click="getData2" type="info" :loading="getData2.Loading">
+          {{ $t('ajax') }} 2
+        </el-button>
+        <el-button @click="getData3" type="info" :loading="getData3.Loading">
+          {{ $t('ajax') }} 3
+        </el-button>
       </div>
     </div>
     <div class="grid gap-[10px] grid-rows-[repeat(3,32px)]">
@@ -84,9 +90,18 @@ const getData = useLoading(async () => {
   reset()
 })
 
+const getData2 = useLoading(async () => {
+  await store.setAppId()
+  reset()
+})
+
+const getData3 = useLoading(async () => {
+  await store.setAppId()
+  reset()
+})
+
 onMounted(() => {
   getData()
   console.log('%cindex.vue line:89 locale', 'color: #007acc;', locale)
 })
 </script>
-~/store/app~/store/appStore
