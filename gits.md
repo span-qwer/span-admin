@@ -1,6 +1,6 @@
-### Git 常用操作命令收集：
+## Git 常用操作命令收集：
 
-#### 1. 分支(branch)操作相关命令
+### 1. 分支(branch)操作相关命令
 
     查看本地分支：$ git branch
     查看远程分支：$ git branch -r
@@ -14,7 +14,7 @@
     创建远程分支(本地分支 push 到远程)：$ git push origin [name]
     删除远程分支：$ git push origin :heads/[name]
 
-#### 2. 版本(tag)操作相关命令
+### 2. 版本(tag)操作相关命令
 
     查看版本：$ git tag
     创建版本：$ git tag [name]
