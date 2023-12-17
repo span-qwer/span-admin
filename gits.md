@@ -2,15 +2,11 @@
 
 #### 1. 分支(branch)操作相关命令
 
-查看本地分支：$ git branch
-
-查看远程分支：$ git branch -r
-
-创建本地分支：$ git branch [name] 
-
-切换分支：$ git checkout [name]
-
-创建新分支并立即切换到新分支：$ git checkout -b [name]
+    查看本地分支：$ git branch
+    查看远程分支：$ git branch -r
+    创建本地分支：$ git branch [name] 
+    切换分支：$ git checkout [name]
+    创建新分支并立即切换到新分支：$ git checkout -b [name]
 
 创建一个新的本地分支，并与指定的远程分支关联: git checkout -b [name] origin/[name]
 
