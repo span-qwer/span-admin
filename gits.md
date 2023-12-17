@@ -28,7 +28,7 @@
 
     创建新分支并立即切换到新分支：$ git checkout -b [name]
 
-    删除分支：$ git branch -d [name] ---- -d 选项只能删除已经参与了合并的分支，
+    删除分支：$ git branch -d [name] ---- -d 选项只能删除已经参与了合并的分支，  
     对于未有合并的分支是无法删除的。如果想强制删除一个分支，可以使用-D 选项
 
     合并分支：$ git merge [name] ----将名称为[name]的分支与当前分支合并
@@ -37,10 +37,10 @@
 
     删除远程分支：$ git push origin :heads/[name]
 
-    我从 master 分支创建了一个 issue5560 分支，做了一些修改后，
-    使用 git push origin master 提交，但是显示的结果却是'Everything up-to-date'，
-    发生问题的原因是 git push origin master 在没有 track 远程分支的本地分支中默认提交的 master 分支，
-    因为 master 分支默认指向了 origin master 分支，
+    我从 master 分支创建了一个 issue5560 分支，做了一些修改后，  
+    使用 git push origin master 提交，但是显示的结果却是'Everything up-to-date'，  
+    发生问题的原因是 git push origin master 在没有 track 远程分支的本地分支中默认提交的 master 分支，  
+    因为 master 分支默认指向了 origin master 分支，  
     这里要使用 git push origin issue5560：master 就可以把 issue5560 推送到远程的 master 分支了。
 
     如果想把本地的某个分支test提交到远程仓库，并作为远程仓库的master分支，或者作为另外一个名叫test的分支，那么可以这么做。
