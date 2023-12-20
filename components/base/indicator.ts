@@ -49,12 +49,12 @@ export default defineComponent({
     },
     height: {
       type: Number,
-      default: 3
+      default: 2
     },
     color: {
       type: [String, Boolean],
       default:
-        'repeating-linear-gradient(to right,#25371c 0%,#4e8e2f 50%,#67C23A 100%)'
+        'repeating-linear-gradient(to right,#525457 0%,#6b6d71 50%,#909399 100%)'
     }
   },
   setup(props, { slots }) {

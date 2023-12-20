@@ -13,4 +13,9 @@ const langs: any = { cn: zhCn, en }
 const lang = computed(() => {
   return langs[locale.value]
 })
+
+const store = appStore()
+onMounted(() => {
+  store.setMenu()
+})
 </script>
