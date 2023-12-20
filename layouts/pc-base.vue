@@ -1,12 +1,12 @@
 <template>
-  <div
-    class="min-h-screen min-w-screen bg-base-bg1 text-base-tx1 text-base-sz2"
-  >
-    <LazyPcHeader />
-    <main class="px-[30px] pt-[--header-height]">
-      <slot />
-    </main>
+  <div class="base">
+    <div>this is pc {{ store.appId }}</div>
+    <slot />
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const store = appStore()
+</script>
+
+<style></style>

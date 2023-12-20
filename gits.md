@@ -22,3 +22,6 @@
     查看远程版本：$ git tag -r
     创建远程版本(本地版本 push 到远程)：$ git push origin [name]
     删除远程版本：$ git push origin :refs/tags/[name]
+
+### 3. 提交命令
+    取消merge： git reset --merge HEAD~1

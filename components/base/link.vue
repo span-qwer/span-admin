@@ -1,9 +1,7 @@
 <template>
-  <div>
+  <NuxtLink v-bind="$attrs" class="text-base-tx1">
     <slot />
-  </div>
+  </NuxtLink>
 </template>
 
 <script setup lang="ts"></script>
-
-<style scoped></style>
