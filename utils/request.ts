@@ -1,13 +1,20 @@
 import { ElMessage } from 'element-plus'
 
-export const $http = (url: string, opts?: any) => {
-  const target = `/api${url}`
+export const $http = (opts: any) => {
+  if (Object.prototype.toString.call(opts) === '[object String]') {
+    return $fetch(`/api${opts}`)
+  }
 
-  return $fetch(target, {
-    query: { b: 2 },
-    body: { hello: 'world '},
-    method: 'POST',
+  const target = `/api${opts.url}`
+  const options = {
     ...opts,
+    // query: { b: 2 },
+    // body: { hello: 'world '},
+    // method: 'POST',
+
+    // async onResponseError({ error }) {
+    //   console.log('response 出错啦,error信息是=========', error)
+    // },
     async onRequest({ options }: any) {
       const store = appStore()
       if (store.authToken) {
@@ -24,8 +31,8 @@ export const $http = (url: string, opts?: any) => {
       const { status, statusText } = response
       if (status !== 200) return ElMessage.error(statusText)
     }
-    // async onResponseError({ error }) {
-    //   console.log('response 出错啦,error信息是=========', error)
-    // },
-  })
+  }
+  options.url && delete options.url
+
+  return $fetch(target, options)
 }

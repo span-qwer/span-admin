@@ -55,14 +55,10 @@
     </div>
     <div class="grid gap-[10px] grid-rows-[repeat(3,32px)]">
       <span class="text-base-tx1 flex items-center">
-        this is pc id: {{ getData.Loading ? 'loading...' : appStore().appId }}
+        id: {{ getData.Loading ? 'loading...' : appStore().appId }}
       </span>
-      <span class="text-base-tx1 flex items-center">
-        this is pc name: {{ form.name }}
-      </span>
-      <span class="text-base-tx1 flex items-center">
-        this is pc age: {{ form.age }}
-      </span>
+      <span class="text-base-tx1 flex items-center">name: {{ form.name }}</span>
+      <span class="text-base-tx1 flex items-center">age: {{ form.age }}</span>
     </div>
   </div>
 </template>
@@ -79,8 +75,9 @@ const sortAsc = (): void => {
 
 const store = appStore()
 const { form, reset }: FormType = useForm({ name: '', age: '' })
+
 const getData = useLoading(async () => {
-  await store.setAppId()
+  await store.setAppId({ ...form })
   reset()
 })
 

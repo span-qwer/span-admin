@@ -15,8 +15,12 @@ export const appStore = defineStore({
     getAuthToken: state => state.authToken
   },
   actions: {
-    async setAppId() {
-      const { appId }: any = await $http('/appId')
+    async setAppId(payload?: any) {
+      const { appId }: any = await $http({
+        url: '/appId',
+        method: 'post',
+        body: { ...payload }
+      })
       this.appId = appId
       return { appId }
     },
