@@ -21,6 +21,7 @@ onMounted(() => {
     time.value = new Date()
   }, 1000)
 })
+
 onUnmounted(() => {
   timer.value && clearInterval(timer.value)
   timer.value = null
