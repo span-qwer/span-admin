@@ -1,7 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  app: {},
-  alias: {},
   devtools: { enabled: true },
   // ssr: false,
   modules: [

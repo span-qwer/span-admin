@@ -1,5 +1,5 @@
 const cn = {
-  LOGO: '标识',
+  LOGO: 'LOGO',
   title: '标题',
   dark: '黑暗',
   light: '明亮',

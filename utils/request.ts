@@ -11,7 +11,6 @@ export const $http = (opts: any) => {
     // query: { b: 2 },
     // body: { hello: 'world '},
     // method: 'POST',
-
     // async onResponseError({ error }) {
     //   console.log('response 出错啦,error信息是=========', error)
     // },

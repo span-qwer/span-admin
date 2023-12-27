@@ -37,7 +37,7 @@
         >
           Locale
         </el-button>
-        <LazyBaseSwitchDark />
+        <BaseSwitchDark />
       </div>
       <div>
         {{ $t('title') }}
