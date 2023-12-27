@@ -3,7 +3,7 @@
     <AdminHeader />
     <main class="pt-[--header-height] flex min-h-screen">
       <AdminMenu />
-      <div class="relative flex-1 p-[20px]">
+      <div class="relative flex-1 w-[0] p-[20px]">
         <BaseIndicator />
         <slot />
       </div>

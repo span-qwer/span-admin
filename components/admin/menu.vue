@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[200px] bg-blue-3 flex flex-col h-[auto] dark:bg-blue-9">
+  <div class="w-[200px] flex-shrink-0 bg-blue-3 flex flex-col h-[auto] dark:bg-blue-9">
     <BaseLink
       v-for="item in store.menu"
       :eky="item.path"
