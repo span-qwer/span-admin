@@ -1,3 +1,4 @@
+import Text from './text'
 export default defineComponent({
   name: 'input-password',
   inheritAttrs: false,
@@ -52,12 +53,7 @@ export default defineComponent({
     }
 
     return () => (
-      <el-input
-        {...attrs_}
-        v-slots={slots}
-        modelValue={hiddenpw.value}
-        type={'text'}
-      />
+      <Text {...attrs_} v-slots={slots} modelValue={hiddenpw.value} />
     )
   }
 })

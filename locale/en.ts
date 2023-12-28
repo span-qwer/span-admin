@@ -6,6 +6,7 @@ const en = {
   ajax: 'ajax',
   password: 'password',
   username: 'username',
+  reset: 'reset'
 }
 
 export default en

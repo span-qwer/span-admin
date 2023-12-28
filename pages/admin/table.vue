@@ -15,8 +15,10 @@
           v-model="form.password"
         />
       </el-form-item>
-
       <el-form-item>
+        <el-button @click="reset" type="info">
+          {{ $t('reset') }}
+        </el-button>
         <el-button @click="getData" type="info" :loading="getData.Loading">
           {{ $t('ajax') }}
         </el-button>
@@ -24,6 +26,7 @@
     </el-form>
 
     <TableLite
+      v-if="getData.show"
       v-loading="getData.Loading"
       :data="tableData"
       style="width: 100%"
@@ -43,7 +46,6 @@ const { form, reset } = useForm({ username: '', password: '' })
 
 const app_ = appStore()
 const getData = useLoading(async () => {
-  console.log('%ctable.vue line:46 {...form}', 'color: #007acc;', { ...form })
   await app_.setAppId()
 })
 

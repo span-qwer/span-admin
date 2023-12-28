@@ -3,9 +3,11 @@ import { type Ref, ref } from 'vue'
 export default function (fun: Function): any {
   const LoadingCounter: Ref<number> = ref(0)
   const Loading: Ref<boolean> = ref(false)
+  const show = ref(false)
 
   return new Proxy(fun, {
     get: function (tar, prop, reactive) {
+      if (prop === 'show') return show.value
       if (prop === 'Loading') return Loading.value
       if (prop === 'LoadingCounter') return LoadingCounter.value
       return Reflect.get(tar, prop, reactive)
@@ -17,6 +19,7 @@ export default function (fun: Function): any {
         Loading.value = !!LoadingCounter.value
 
         r = r.finally(() => {
+          show.value = true
           LoadingCounter.value -= 1
           Loading.value = !!LoadingCounter.value
         }) as Promise<any>
