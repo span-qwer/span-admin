@@ -3,7 +3,9 @@ const cn = {
   title: '标题',
   dark: '黑暗',
   light: '明亮',
-  ajax: 'ajax'
+  ajax: 'ajax',
+  password: '密码',
+  username: '用户名',
 }
 
 export default cn

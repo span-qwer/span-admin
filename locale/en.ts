@@ -3,7 +3,9 @@ const en = {
   title: 'title',
   dark: 'Dark',
   light: 'Light',
-  ajax: 'ajax'
+  ajax: 'ajax',
+  password: 'password',
+  username: 'username',
 }
 
 export default en
