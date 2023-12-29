@@ -1,5 +1,5 @@
 <template>
-  <div v-loading="!getData.show" class="h-full">
+  <div class="wrap">
     <el-form :inline="true" :model="form" autocomplete="off">
       <el-form-item :label="$t('username')">
         <BaseInputText

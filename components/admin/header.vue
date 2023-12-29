@@ -5,7 +5,7 @@
     <div class="h-[--header-height] flex items-center gap-[100px] w-full">
       <AdminCompLogo />
       <div class="flex-x gap-[20px] justify-between w-full">
-        <h3>{{ timestr }}</h3>
+        <h3><BaseClock /></h3>
         <div class="flex-x gap-[20px]">
           <BaseSwitchDark />
           <AdminCompLocale />
@@ -15,6 +15,4 @@
   </header>
 </template>
 
-<script setup lang="ts">
-const { timestr } = useClock()
-</script>
+<script setup lang="ts"></script>

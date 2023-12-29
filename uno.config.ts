@@ -49,7 +49,7 @@ export default defineConfig({
     'text-base-sz4': 'text-[16px]',
     'base-admin':
       'min-h-screen w-full bg-base-bg1 text-base-tx1 text-base-sz2 overflow-y-auto',
-    wrap: 'w-[1080px] mx-[auto]',
+    wrap: 'h-full p-[20px]',
     'flex-x': 'flex items-center',
     'flex-y': 'flex justify-center',
 

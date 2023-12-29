@@ -1,5 +1,7 @@
 <template>
-  <Demo />
+  <div class="wrap">
+    <Demo />
+  </div>
 </template>
 
 <script setup lang="ts"></script>
