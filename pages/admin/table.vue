@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-loading="!getData.show" class="h-full">
     <el-form :inline="true" :model="form" autocomplete="off">
       <el-form-item :label="$t('username')">
         <BaseInputText
@@ -16,10 +16,10 @@
         />
       </el-form-item>
       <el-form-item>
-        <el-button @click="reset" type="info">
+        <el-button @click="reset" type="primary">
           {{ $t('reset') }}
         </el-button>
-        <el-button @click="getData" type="info" :loading="getData.Loading">
+        <el-button @click="getData" type="primary" :loading="getData.Loading">
           {{ $t('ajax') }}
         </el-button>
       </el-form-item>

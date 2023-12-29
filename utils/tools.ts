@@ -1,16 +1,26 @@
-export const detection_ = (item: any) => {
-  if (Object.prototype.toString.call(item) === '[object Undefined]')
-    return 'Undefined'
-  if (Object.prototype.toString.call(item) === '[object Null]') return 'Null'
-  if (Object.prototype.toString.call(item) === '[object Boolean]')
-    return 'Boolean'
-  if (Object.prototype.toString.call(item) === '[object String]')
-    return 'String'
-  if (Object.prototype.toString.call(item) === '[object Number]')
-    return 'Number'
-  if (Object.prototype.toString.call(item) === '[object Array]') return 'Array'
-  if (Object.prototype.toString.call(item) === '[object Object]')
-    return 'Object'
-  if (Object.prototype.toString.call(item) === '[object Function]')
-    return 'Function'
+export const typeof_ = (any: any) => {
+  return Object.prototype.toString.call(any).slice(8, -1)
+}
+
+const baseDateFormat = new Intl.DateTimeFormat('zh-CN', {
+  year: 'numeric',
+  month: 'numeric',
+  day: 'numeric',
+  hour: 'numeric',
+  minute: 'numeric',
+  second: 'numeric',
+  hour12: false
+})
+export const dateFormat = (date: Date) => {
+  if (typeof_(date) !== 'Date') return date
+  return baseDateFormat.format(date)
+}
+
+const baseNumberFormatCNY = new Intl.NumberFormat('zh-CN', {
+  style: 'currency',
+  currency: 'CNY'
+})
+export const moneyFormatCNY = (num: number) => {
+  if (typeof_(num) !== 'Number') return num
+  return baseNumberFormatCNY.format(num)
 }
